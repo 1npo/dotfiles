@@ -1,0 +1,8 @@
+source ~/.zsh/git-prompt.zsh
+
+source ~/.zsh/env.zsh
+source ~/.zsh/prompt.zsh
+source ~/.zsh/alias.zsh
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
