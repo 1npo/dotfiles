@@ -1,3 +1,5 @@
 alias ls="ls --color=auto -F"
 alias la="ls -a"
+alias ll="ls -l"
 alias sagi="sudo apt-get install"
+alias vact="source venv/bin/activate"

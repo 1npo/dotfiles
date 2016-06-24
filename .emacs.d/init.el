@@ -20,6 +20,11 @@
       kept-new-versions 3
       version-control t)
 
+;;;; auto-save files
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
 
 
 ;;;;;;;;;;;;;;;;;
@@ -41,7 +46,11 @@
 (setq-default c-basic-offset 4)
 (put 'upcase-region 'disabled nil)
 (c-set-offset 'case-label '+) ;; fix stupid case indenting
-
+(add-hook 'text-mode-hook
+          '(lambda ()
+             (setq indent-tabs-mode nil)
+             (setq tab-width 4)
+             (setq indent-line-function (quote insert-tab))))
 
 
 ;;;;;;;;;;;;;;;;;;
