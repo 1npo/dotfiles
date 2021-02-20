@@ -1,3 +1,3 @@
-#dotfiles
+# dotfiles
 
 Backup of configuration files
