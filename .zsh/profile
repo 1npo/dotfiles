@@ -1,5 +1,0 @@
-#source ~/.zsh/git-prompt.zsh
-
-source ~/.zsh/env.zsh
-source ~/.zsh/prompt.zsh
-source ~/.zsh/alias.zsh
